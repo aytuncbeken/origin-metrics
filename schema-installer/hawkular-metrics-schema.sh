@@ -141,6 +141,7 @@ rm cas-to-import*
 cd ${PREV_DIR}
 
 java -Dhawkular.metrics.cassandra.nodes=$CASSANDRA_NODES \
+     -Dhawkular.metrics.read.timeout=$READ_TIMEOUT \
      -Dhawkular.metrics.cassandra.use-ssl=true \
      -Dhawkular.metrics.cassandra.resetdb=$RESET_DB \
      -Dhawkular.metrics.cassandra.connection.max-delay=$CASSANDRA_CONNECTION_MAX_DELAY \
